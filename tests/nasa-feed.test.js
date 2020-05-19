@@ -8,6 +8,7 @@ function getDate(d = new Date()) {
 
 // tests the structure of the json is the way we expect
 function test() {
+  console.log(1);
   return axios
     .get(
       `https://api.nasa.gov/neo/rest/v1/feed?start_date=${getDate()}&api_key=DEMO_KEY`
